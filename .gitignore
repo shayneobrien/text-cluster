@@ -1,1 +1,5 @@
-vector_cache
+env/
+__pycache__/
+.DS_store
+.ipynb_checkpoints/
+.vector_cache/

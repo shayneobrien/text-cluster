@@ -1,0 +1,16 @@
+ipython
+jupyter
+cython
+tqdm
+pandas
+scipy
+sklearn
+matplotlib
+nltk
+seaborn
+torch==0.4.1
+torchtext
+cached_property
+datasketch
+hdbscan
+numpy==1.14.5
