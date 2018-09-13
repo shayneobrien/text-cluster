@@ -1,12 +1,8 @@
-import os, sys
-module_path = os.path.abspath(os.path.join('..'))
-sys.path.append(module_path)
-
 import torch
 import torch.nn as nn
 import numpy as np
 from datasketch import MinHashLSH
-from src.modules import LazyVectors
+from .modules import LazyVectors
 
 VECTORS = LazyVectors(cache='/Users/sob/github/.vector_cache/')
 

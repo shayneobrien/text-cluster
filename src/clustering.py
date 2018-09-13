@@ -6,10 +6,6 @@ supports custom text representations (e.g. Continuous Bag of
 Words) but will default to tfidf if none are provided.
 """
 
-import os, sys
-module_path = os.path.abspath(os.path.join('..'))
-sys.path.append(module_path)
-
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt

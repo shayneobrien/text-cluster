@@ -1,7 +1,3 @@
-import os, sys
-module_path = os.path.abspath(os.path.join('..'))
-sys.path.append(module_path)
-
 import torch
 import torch.nn as nn
 from torchtext.vocab import Vectors
@@ -9,7 +5,7 @@ from torchtext.vocab import Vectors
 import pandas as pd
 from cached_property import cached_property
 from datasketch import MinHash, MinHashLSH
-from src.utils import clean_string, read_file
+from .utils import clean_string, read_file
 
 
 class StreamData:
