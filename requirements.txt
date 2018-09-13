@@ -13,4 +13,4 @@ torchtext
 cached_property
 datasketch
 hdbscan
-numpy==1.14.5
+numpy

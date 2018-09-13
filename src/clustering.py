@@ -241,9 +241,9 @@ class Cluster:
         fig = plt.figure(figsize=(10,6))
         ax = plt.axes(projection='3d')
         ax.scatter(matrix3D.T[0],
-                    matrix3D.T[1],
-                    matrix3D.T[2],
-                    c=colors)
+                   matrix3D.T[1],
+                   matrix3D.T[2],
+                   c=colors)
 
         # Add a title
         alg_name = str(self.algorithm.__class__.__name__)
