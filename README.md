@@ -1,6 +1,6 @@
 # Motivating question
-Given a stream of data, how do we cluster it into topics?
-
+Given a stream of data, how do we cluster it into topics?  
+![](data/example.png)
 # Initialization
 To initialize the repository and launch Jupyer notebooks for playing around:
 ```
@@ -38,5 +38,5 @@ _ = online.top_terms(topx=10)
 ```
 streamer = StreamData(filename='../data/talk_radio.csv', chunk=1000, use_column=None)
 init_text = list(streamer._init_data(5).sentences)
-online = OnlineCluster(text=init_text, method='kmeans', n_clusters=25, vectorizer=CBoW(), viz=False)
+online = OnlineCluster(text=init_text, method='kmeans', n_clusters=25, vectorizer=CBoW(), viz=True)
 ```
