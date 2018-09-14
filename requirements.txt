@@ -2,6 +2,7 @@ ipython
 jupyter
 cython
 tqdm
+numpy==1.14.5
 pandas
 scipy
 sklearn
@@ -13,4 +14,3 @@ torchtext
 cached_property
 datasketch
 hdbscan
-numpy
