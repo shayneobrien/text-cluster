@@ -10,7 +10,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 # Use cases:
-###### Offline clustering with TF-IDF, no preprocessing
+###### Offline clustering with TF-IDF, no preprocessing (notebook 01)
 ```
 text = pd.read_csv('../data/talk_radio.csv')
 clustering = Cluster(text.sentences)
@@ -18,7 +18,7 @@ results = clustering(method='kmeans', vectorizer=None,
                      reduce_dim=None, viz=True, n_clusters=10)
 ```
 
-###### Online clustering with TF-IDF, preprocess text
+###### Online clustering with TF-IDF, preprocess text (notebook 02)
 ```
 streamer = StreamData(filename='../data/talk_radio.csv', chunk=500, use_column='sentences')
 init_text = streamer._init_data(10)
@@ -34,7 +34,7 @@ for _ in tqdm(range(num_batches)):
 _ = online.top_terms(topx=10)
 ```
 
-###### Online clustering with Continuous Bag of Words, no preprocessing
+###### Online clustering with Continuous Bag of Words, no preprocessing (notebook 03)
 ```
 streamer = StreamData(filename='../data/talk_radio.csv', chunk=1000, use_column=None)
 init_text = list(streamer._init_data(5).sentences)
