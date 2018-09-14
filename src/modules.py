@@ -31,7 +31,7 @@ class StreamData:
         return next(self.generator)
 
     def _init_data(self, num_chunks):
-        """ Generate a bunch of data to serve as initialization (debugging) """
+        """ Generate a bunch of data to serve as initialization """
         return pd.concat([self.__call__() for _ in range(num_chunks)])
 
     def _process(self, batch):
