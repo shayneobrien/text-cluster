@@ -9,7 +9,7 @@ python -m venv env
 pip install -r requirements.txt  
 jupyter notebook
 ```
-# Use cases:
+# Usage:
 ###### Offline clustering with TF-IDF, no preprocessing (notebook 01)
 ```
 text = pd.read_csv('../data/talk_radio.csv')
